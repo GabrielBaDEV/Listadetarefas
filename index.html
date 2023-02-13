@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas com LocalStorage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        
+        <section class="greeting">
+            <h2 class="title">
+                Eai, <input type="text" id="name" placeholder="Seu nome">
+            </h2>
+        </section>
+        
+            <section class="create-todo">
+                <h3>Crie uma tarefa</h3>
+                <form id="new-todo-form">
+                    <h4>O que esta na sua lista de tarefas?</h4>
+                    <input 
+                    type="text"
+                     name="content" 
+                     id="content" 
+                     placeholder="Ex : Comprar leite" />
+
+                     <h4>Escolhe uma categoria</h4>
+                     <div class="options">
+                        
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="category" 
+                            id="category1" 
+                            value="business" />
+                            <span class="bubble business"></span>
+                            <div>Trabalho</div>
+                        </label>
+
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="category" 
+                            id="category2" 
+                            value="personal" />
+                            <span class="bubble personal"></span>
+                            <div>Pessoal</div>
+                        </label>
+                        
+                     </div>
+
+                     <input type="submit" value="Adicionar Tarefa" />
+                </form>
+            </section>
+
+            <section class="todo-list">
+                <h3>Lista de tarefas</h3>
+                <div class="list" id="todo-list">
+                <!-- <div class="todo-item done">
+                        <label>
+                            <input type="checkbox"/>
+                            <span class="bubble business"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Suas tarefas" readonly>
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Editar</buttton>
+                            <button class="delete">Deletar</button>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <label>
+                            <input type="checkbox" title="inp"/>
+                            <span class="bubble personal"></span>
+                        </label>
+
+                        <div class="todo-content">
+                            <input type="text" value="Pegue leite" readonly title="inp">
+                        </div>
+
+                        <div class="actions">
+                            <button class="edit">Editar</buttton>
+                            <button class="delete">Deletar</button>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
